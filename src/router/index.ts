@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import UsuarioView from '@/views/UsuarioView.vue'
 import UsuarioView2 from '@/views/UsuarioView2.vue'
 import Vocabulos from '@/views/Vocabulos.vue'
+import Anuncios from '@/views/Anuncios.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/vocabulos',
       name: 'vocabulos',
       component: Vocabulos
+    },
+    {
+      path: '/anuncios',
+      name: 'anuncios',
+      component:Anuncios
     },
     {
       path: '/about',
